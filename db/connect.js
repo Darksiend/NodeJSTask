@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb+srv://darksiend:ANRanr123@nodetaskmanager.yubg1.mongodb.net/NodeTaskManager?retryWrites=true&w=majority'
+
 
 const connectDB = (url) => {
 
  return mongoose
-        .connect(connectionString, {
+        .connect(url, {
                 useNewUrlParser: true,
                 useCreateIndex: true,
                 useFindAndModify:false,
